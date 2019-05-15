@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
 <?import javafx.scene.control.Button?>
-<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.ComboBox?>
 <?import javafx.scene.control.Label?>
 <?import javafx.scene.control.SplitPane?>
 <?import javafx.scene.layout.AnchorPane?>
@@ -13,17 +13,18 @@
       <items>
         <AnchorPane fx:id="optionMenu" minHeight="0.0" minWidth="0.0" prefHeight="130.0" prefWidth="488.0">
           <children>
-            <Button fx:id="exitBtn" layoutX="109.0" layoutY="18.0" mnemonicParsing="false" onAction="#exitGame" prefHeight="25.0" prefWidth="80.0" text="Exit" />
-            <Button fx:id="startGameBtn" layoutX="14.0" layoutY="18.0" mnemonicParsing="false" onAction="#startGame" prefHeight="25.0" prefWidth="80.0" text="Start game" textAlignment="CENTER" textFill="#030000" />
-                  <ChoiceBox fx:id="grillSizeChoiceBox" layoutX="291.0" layoutY="18.0" prefWidth="150.0" />
-                  <ChoiceBox fx:id="levelChoiceBox" layoutX="291.0" layoutY="72.0" prefWidth="150.0" />
-                  <Label layoutX="211.0" layoutY="22.0" prefHeight="17.0" prefWidth="80.0" text="Select a size:" />
-                  <Label layoutX="211.0" layoutY="76.0" prefHeight="17.0" prefWidth="80.0" text="Select a level:" />
-                  <Button fx:id="checkBtn" disable="true" layoutX="15.0" layoutY="85.0" mnemonicParsing="false" onAction="#checkGame" prefHeight="25.0" prefWidth="80.0" text="End game" />
-                  <Label fx:id="statusLabel" alignment="CENTER" layoutX="14.0" layoutY="113.0" prefHeight="17.0" prefWidth="80.0" style="-fx-font-weight: bold;" text="You WIN!" textAlignment="CENTER" textFill="LIME" visible="false" />
-                  <Label fx:id="timerLabel" layoutX="62.0" layoutY="53.0" prefHeight="25.0" prefWidth="80.0" style="-fx-font-weight: bold;" textAlignment="CENTER" />
-                  <Label fx:id="hintLabel" alignment="CENTER" layoutX="109.0" layoutY="113.0" prefHeight="17.0" prefWidth="80.0" style="-fx-font-weight: bold;" text="Hint:" textAlignment="CENTER" visible="false" />
-                  <Button fx:id="hintBtn" disable="true" layoutX="109.0" layoutY="85.0" mnemonicParsing="false" onAction="#getHint" prefHeight="25.0" prefWidth="80.0" text="Hint" />
+                  <ComboBox fx:id="grillSizeChoiceBox" layoutX="87.0" layoutY="19.0" prefHeight="25.0" prefWidth="94.0" />
+                  <ComboBox fx:id="levelChoiceBox" layoutX="87.0" layoutY="54.0" prefHeight="25.0" prefWidth="94.0" />
+            <Button fx:id="startGameBtn" layoutX="223.0" layoutY="19.0" mnemonicParsing="false" onAction="#startGame" prefHeight="25.0" prefWidth="94.0" text="Start game" textAlignment="CENTER" textFill="#030000" />
+                  <Button fx:id="checkBtn" disable="true" layoutX="223.0" layoutY="85.0" mnemonicParsing="false" onAction="#checkGame" prefHeight="25.0" prefWidth="94.0" text="End game" />
+            <Button fx:id="exitBtn" layoutX="350.0" layoutY="19.0" mnemonicParsing="false" onAction="#exitGame" prefHeight="25.0" prefWidth="94.0" text="Exit" />
+                  <Button fx:id="hintBtn" disable="true" layoutX="350.0" layoutY="85.0" mnemonicParsing="false" onAction="#getHint" prefHeight="25.0" prefWidth="94.0" text="Hint" />
+                  <Label layoutX="7.0" layoutY="23.0" prefHeight="17.0" prefWidth="80.0" text="Select a size:" />
+                  <Label layoutX="7.0" layoutY="57.0" prefHeight="17.0" prefWidth="80.0" text="Select a level:" />
+                  <Label fx:id="statusLabel" alignment="CENTER" layoutX="230.0" layoutY="109.0" prefHeight="17.0" prefWidth="80.0" style="-fx-font-weight: bold;" text="You WIN!" textAlignment="CENTER" textFill="LIME" visible="false" />
+                  <Label fx:id="timerLabel" layoutX="230.0" layoutY="53.0" prefHeight="25.0" prefWidth="80.0" style="-fx-font-weight: bold;" textAlignment="CENTER" />
+                  <Label fx:id="hintLabel" alignment="CENTER" layoutX="357.0" layoutY="109.0" prefHeight="17.0" prefWidth="80.0" style="-fx-font-weight: bold;" text="Hint:" textAlignment="CENTER" visible="false" />
+                  <Label layoutX="7.0" layoutY="109.0" prefHeight="17.0" prefWidth="80.0" text="© MrWonsik" underline="true" />
           </children>
         </AnchorPane>
         <AnchorPane fx:id="sudokuBoard" minHeight="0.0" minWidth="0.0" prefHeight="490.0" prefWidth="488.0">

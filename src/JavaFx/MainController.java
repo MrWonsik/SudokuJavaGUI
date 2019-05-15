@@ -15,10 +15,7 @@ import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.geometry.Pos;
 import javafx.scene.Node;
-import javafx.scene.control.Button;
-import javafx.scene.control.ChoiceBox;
-import javafx.scene.control.Label;
-import javafx.scene.control.TextField;
+import javafx.scene.control.*;
 import javafx.scene.layout.AnchorPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.paint.Color;
@@ -33,10 +30,10 @@ public class MainController implements Initializable {
     private Label statusLabel = new Label();
 
     @FXML
-    private ChoiceBox grillSizeChoiceBox = new ChoiceBox();
+    private ComboBox grillSizeChoiceBox = new ComboBox();
 
     @FXML
-    private ChoiceBox levelChoiceBox = new ChoiceBox();
+    private ComboBox levelChoiceBox = new ComboBox();
 
     @FXML
     private Button checkBtn = new Button();
